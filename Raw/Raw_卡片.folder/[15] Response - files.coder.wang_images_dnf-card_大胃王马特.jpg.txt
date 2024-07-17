@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.20.1
+Date: Fri, 12 Jul 2024 04:19:03 GMT
+Content-Type: image/jpeg
+Content-Length: 188394
+Last-Modified: Wed, 05 Jun 2024 06:14:23 GMT
+Connection: keep-alive
+ETag: "6660023f-2dfea"
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+Accept-Ranges: bytes
+
+<Image Binary>

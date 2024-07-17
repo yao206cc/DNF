@@ -1,0 +1,12 @@
+GET /images/dnf-card/%E5%A4%A7%E8%83%83%E7%8E%8B%E9%A9%AC%E7%89%B9.jpg HTTP/1.1
+Host: files.coder.wang
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/6.8.0(0x16080000) NetType/WIFI MiniProgramEnv/Mac MacWechat/WMPF XWEB/30626
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: https://servicewechat.com/wxaebd07387fcda13b/23/page-frame.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh
+

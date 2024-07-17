@@ -1,0 +1,491 @@
+[
+    {
+      "name": "沧海长风战矛",
+      "level": 55,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "矛",
+      "magicResistance": 2260,
+      "attributes": {
+        "strength": 70,
+        "physicalAttack": 791,
+        "magicAttack": 560,
+        "physicalCritRate": 0.02
+      },
+      "specialEffects": [
+        "技能攻击力 +25%",
+        "每30秒消耗3个无色小晶块，随机获得以下效果中的1种，效果持续30秒。",
+        "物理、魔法攻击力 +15%",
+        "物理攻击力 +15%",
+        "魔法攻击力 +15%",
+        "所有属性强化+ 32"
+      ]
+    },
+    {
+      "name": "魂.戮蛊的骨矛",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "矛",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 103,
+        "intelligence": 39,
+        "physicalAttack": 736,
+        "magicAttack": 521,
+        "physicalCritRate": 0.02
+      },
+      "specialEffects": [
+        "伤害 +12%",
+        "攻击时，有10%的概率使敌人进入创伤状态10秒。(冷却时间10秒)攻击时，有5%的概率产生冲击波。(冷却时间3秒)"
+      ]
+    },
+    {
+      "name": "魂.冰龙掩日矛",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "矛",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 65,
+        "physicalAttack": 736,
+        "magicAttack": 521,
+        "physicalCrit": 12
+      },
+      "specialEffects": [
+        "附加冰属性攻击冰属性强化 +10攻击时，有5%的概率使敌人进入冰冻状态8秒。(冷却时间5秒)",
+        "攻击时，有10%的概率增加15%的物理、魔法攻击力，效果持续10秒。(冷却时间10秒)"
+      ]
+    },
+    {
+      "name": "重力之契矛",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "矛",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 65,
+        "physicalAttack": 736,
+        "magicAttack": 521,
+        "physicalCritRate": 0.02
+      },
+      "specialEffects": [
+        "伤害 +10%",
+        "物理攻击力 +18%"
+      ]
+    },
+    {
+      "name": "焰纹封魔戟",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "矛",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 65,
+        "physicalAttack": 625,
+        "magicAttack": 442,
+        "physicalCritRate": 0.02,
+        "physicalCrit": 85
+      },
+      "specialEffects": [
+        "伤害 +15%",
+        "攻击时，有10%的概率对敌人施放火焰爆炸。(冷却时间3秒)"
+      ]
+    },
+    {
+      "name": "精竹之魂",
+      "level": 40,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "矛",
+      "magicResistance": 1785,
+      "attributes": {
+        "strength": 55,
+        "physicalAttack": 625,
+        "magicAttack": 442,
+        "physicalCritRate": 0.02
+      },
+      "specialEffects": [
+        "伤害 +15%",
+        "攻击时，有5%的概率使敌人爆炸。(冷却时间3秒)",
+        "攻击时，有5%的概率击退敌人。(冷却时间3秒)"
+      ]
+    },
+    {
+      "name": "沧海长风棍棒",
+      "level": 55,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "棍棒",
+      "magicResistance": 2260,
+      "attributes": {
+        "strength": 46,
+        "intelligence": 46,
+        "physicalAttack": 713,
+        "magicAttack": 549
+      },
+      "specialEffects": [
+        "技能攻击力 +25%",
+        "每30秒消耗3个无色小晶块，随机获得以下效果中的1种，效果持续30秒。",
+        "物理、魔法攻击力 +15%",
+        "物理攻击力 +15%",
+        "魔法攻击力 +15%",
+        "所有属性强化+ 32"
+      ]
+    },
+    {
+      "name": "魂·玉龙奔雷棍",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "棍棒",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 43,
+        "intelligence": 43,
+        "physicalAttack": 662,
+        "magicAttack": 552
+      },
+      "specialEffects": [
+        "附加光属性攻击光属性抗性 +12",
+        "光属性强化 +8",
+        "攻击时，有5%的概率使敌人进入感电状态15秒。(冷却时间",
+        "5秒 )",
+        "攻击感电状态的敌人时，使自身进入加速状态10秒。(冷却时间10秒)",
+        "攻击时，有10%的概率增加15%的物理、魔法攻击力，效果持续10秒。(冷却时间10秒)"
+      ]
+    },
+    {
+      "name": "光明之锁棍",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "棍棒",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 43,
+        "intelligence": 43,
+        "physicalAttack": 662,
+        "magicAttack": 552
+      },
+      "specialEffects": [
+        "智力 +12%",
+        "攻击时，有5%的概率使自身进入祝福状态10秒。(冷却时间10秒 )",
+        "攻击时，有5%的概率增加10%的智力，效果持续20秒。(冷却时间20秒)"
+      ]
+    },
+    {
+      "name": "破极卸刃棍",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "棍棒",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 43,
+        "intelligence": 43,
+        "physicalAttack": 662,
+        "magicAttack": 552
+      },
+      "specialEffects": [
+        "攻击生命值50%以上的敌人时，有5%的概率使敌人减少700点物理防御力，效果持续5秒。(冷却时间5秒)",
+        "攻击生命值低于50%的敌人时，有5%的概率使敌人减少1000点防御力，效果持续5秒。(冷却时间5秒)",
+        "攻击时，有5%的概率施放激者之怒，效果持续10秒。(冷却时间10秒)",
+        "物理和魔法攻击力 +30%",
+        "自身物理防御力 -30%"
+      ]
+    },
+    {
+      "name": "沧海长风魔杖",
+      "level": 55,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "魔杖",
+      "magicResistance": 2260,
+      "attributes": {
+        "strength": 70,
+        "physicalAttack": 594,
+        "magicAttack": 726,
+        "castingSpeed": 0.05
+      },
+      "specialEffects": [
+        "技能攻击力 +25%",
+        "每30秒消耗3个无色小晶块，随机获得以下效果中的1种，效果持续30秒。",
+        "物理、魔法攻击力 +15%",
+        "物理攻击力 +15%",
+        "魔法攻击力 +15%",
+        "所有属性强化+ 32"
+      ]
+    },
+    {
+      "name": "魂·天音护心魔杖",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "魔杖",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 65,
+        "physicalAttack": 552,
+        "magicAttack": 674,
+        "castingSpeed": 0.05
+      },
+      "specialEffects": [
+        "生命值上限 +220(实际+1086)",
+        "魔法值上限 +220(实际+1166)",
+        "魔法师",
+        "远古魔法书技能等级 +1",
+        "元素点燃技能等级 +1",
+        "魔法记忆技能等级 +1",
+        "杰克降临技能等级 +1",
+        "每10秒魔法值5%恢复。",
+        "攻击时，有10%的概率增加15%的物理、法攻击力，效果持续10秒。(冷却时间10秒)"
+      ]
+    },
+    {
+      "name": "切希尔笑脸猫",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "魔杖",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 65,
+        "physicalAttack": 552,
+        "magicAttack": 674,
+        "castingSpeed": 0.05
+      },
+      "specialEffects": [
+        "魔法师",
+        "契约召唤:赫德尔技能等级 +3",
+        "攻击时，有10%的概率增加12%的魔法攻击力，增加82点魔法暴击，效果持续10秒。(冷却时间10秒)"
+      ]
+    },
+    {
+      "name": "落炎魔杖",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "魔杖",
+      "magicResistance": 2033,
+      "attributes": {
+        "strength": 65,
+        "physicalAttack": 552,
+        "magicAttack": 674,
+        "castingSpeed": 0.05
+      },
+      "specialEffects": [
+        "回避 +50",
+        "智力 +18%",
+        "攻击时，有5%的概率使敌人进入减速状态3秒。(冷却时间3",
+        "秒 )",
+        "攻击时，有3%的概率使敌人进入混乱状态3秒。(冷却时间3秒)",
+        "攻击异常状态下的敌人时，有10%的概率使自身进入祝福状态15秒。(冷却时间15秒)"
+      ]
+    },
+    {
+      "name": "沧海长风法杖",
+      "level": 55,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "法杖",
+      "magicResistance": 2260,
+      "attributes": {
+        "intelligence": 46,
+        "physicalAttack": 626,
+        "magicAttack": 791
+      },
+      "specialEffects": [
+        "技能攻击力 +25%",
+        "每30秒消耗3个无色小晶块，随机获得以下效果中的1种，效果持续30秒。",
+        "物理、魔法攻击力 +15%",
+        "物理攻击力 +15%",
+        "魔法攻击力 +15%",
+        "所有属性强化+ 32"
+      ]
+    },
+    {
+      "name": "魂·琳恩的第二个法杖",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "法杖",
+      "magicResistance": 2033,
+      "attributes": {
+        "intelligence": 131,
+        "physicalAttack": 582,
+        "magicAttack": 736,
+        "castingSpeed": 0.12
+      },
+      "specialEffects": [
+        "全属性强化 +8",
+        "施放时，有4%的概率对周围敌人召唤琳恩的[湮灭黑洞]。(冷却时间50秒)"
+      ]
+    },
+    {
+      "name": "魂·末日君主的法杖",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "法杖",
+      "magicResistance": 2033,
+      "attributes": {
+        "intelligence": 43,
+        "physicalAttack": 582,
+        "magicAttack": 736
+      },
+      "specialEffects": [
+        "生命值上限 +138(实际+681)",
+        "魔法值上限 +138(实际+731)",
+        "魔法师",
+        "湮灭黑洞技能等级 +2",
+        "魔法护盾技能等级 +1",
+        "攻击时，有10%的概率增加55点智力，效果持续20秒。(冷却时间20秒 )",
+        "攻击时，有10%的概率增加15%的物理、法攻击力，效果持续10秒。(冷却时间10秒)"
+      ]
+    },
+    {
+      "name": "埃兹拉庞德的预知",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "法杖",
+      "magicResistance": 2033,
+      "attributes": {
+        "intelligence": 43,
+        "physicalAttack": 582,
+        "magicAttack": 736
+      },
+      "specialEffects": [
+        "伤害 +20%",
+        "攻击时，有10%的概率增加7%的魔法攻击力，效果持续15秒。(冷却时间15秒 )"
+      ]
+    },
+    {
+      "name": "伊西利恩的触手",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "法杖",
+      "magicResistance": 2033,
+      "attackSpeedType":"缓慢",
+      "attributes": {
+        "intelligence": 43,
+        "physicalAttack": 582,
+        "magicAttack": 736
+      },
+      "specialEffects": [
+        "攻击时，有5%的概率使敌人进入束缚状态2秒。(冷却时间2秒)",
+        "攻击时，有10%的概率增加10%的智力，效果持续10秒。(冷却时间10秒)",
+        "暴击伤害 +25%"
+      ]
+    },
+    {
+      "name": "沧海长风扫把",
+      "level": 55,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "扫把",
+      "magicResistance": 2260,
+      "attributes": {
+        "intelligence": 46,
+        "physicalAttack": 662,
+        "magicAttack": 726,
+        "movementSpeed": 0.03
+      },
+      "specialEffects": [
+        "技能攻击力 +25%",
+        "每30秒消耗3个无色小晶块，随机获得以下效果中的1种，效果持续30秒。",
+        "物理、魔法攻击力 +15%",
+        "物理攻击力 +15%",
+        "魔法攻击力 +15%",
+        "所有属性强化+ 32"
+      ]
+    },
+    {
+      "name": "魂·古纳的急袭",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "扫把",
+      "magicResistance": 2033,
+      "attributes": {
+        "intelligence": 43,
+        "physicalAttack": 616,
+        "magicAttack": 674,
+        "movementSpeed": 0.03
+      },
+      "attackSpeed": 0.02,
+      "specialEffects": [
+        "生命值上限 +182(实际+899)",
+        "攻击时，有3%的概率使敌人进入创伤状态10秒。(冷却时间5秒 )",
+        "攻击创伤状态的敌人时，增加75点智力，效果持续10秒。(冷却时间10秒)",
+        "攻击时，有10%的概率增加15%的物理、魔法攻击力，效果持续10秒。(冷却时间10秒)",
+        "每10秒恢复2%的生命值。"
+      ]
+    },
+    {
+      "name": "命运的抉择",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "扫把",
+      "magicResistance": 2033,
+      "attributes": {
+        "intelligence": 43,
+        "physicalAttack": 616,
+        "magicAttack": 674,
+        "magicCrit": 45,
+        "movementSpeed": 0.03
+      },
+      "specialEffects": [
+        "伤害 +7%",
+        "魔法攻击力 +10%",
+        "施放时，有20%的概率增加15%的智力，效果持续20秒。(冷却时间20秒)",
+        "施放时，有5%的概率减少44点智力，效果持续10秒。(冷却时间10秒)"
+      ]
+    },
+    {
+      "name": "领悟者的涂鸦笔",
+      "level": 50,
+      "requiredClass": "魔法师",
+      "quality": "史诗",
+      "wearingPosition": "武器",
+      "equipmentType": "扫把",
+      "magicResistance": 2033,
+      "attributes": {
+        "intelligence": 43,
+        "physicalAttack": 616,
+        "magicAttack": 674,
+        "movementSpeed": 0.03
+      },
+      "specialEffects": [
+        "攻击时，附加30%的伤害。"
+      ]
+    }
+  ]

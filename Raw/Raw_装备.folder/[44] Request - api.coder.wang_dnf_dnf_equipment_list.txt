@@ -1,0 +1,15 @@
+GET /dnf/dnf/equipment/list?equipment_name=%E6%AD%A6%E5%99%A8&side_name=%E9%AD%94%E6%B3%95%E5%B8%88 HTTP/1.1
+Host: api.coder.wang
+Connection: keep-alive
+referer: https://servicewechat.com/wxaebd07387fcda13b/23/page-frame.html
+xweb_xhr: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/6.8.0(0x16080000) NetType/WIFI MiniProgramEnv/Mac MacWechat/WMPF XWEB/30626
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh
+If-None-Match: W/"442b-LbeKH2xiNn52u4bf8C9YoiyaPr0"
+

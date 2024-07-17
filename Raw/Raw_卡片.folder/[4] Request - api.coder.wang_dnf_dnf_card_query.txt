@@ -1,0 +1,15 @@
+GET /dnf/dnf/card/query?side_name=%E5%85%A8%E9%83%A8 HTTP/1.1
+Host: api.coder.wang
+Connection: keep-alive
+referer: https://servicewechat.com/wxaebd07387fcda13b/23/page-frame.html
+xweb_xhr: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/6.8.0(0x16080000) NetType/WIFI MiniProgramEnv/Mac MacWechat/WMPF XWEB/30626
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh
+If-None-Match: W/"3357-HoIezKSd64wiBua5mo1it+X6kjg"
+
