@@ -1,62 +1,44 @@
-import App from "./App.vue";
-import router from "./router";
-import { setupStore } from "@/store";
-import { getPlatformConfig } from "./config";
-import { MotionPlugin } from "@vueuse/motion";
-// import { useEcharts } from "@/plugins/echarts";
-import { createApp, type Directive } from "vue";
-import { useElementPlus } from "@/plugins/elementPlus";
-import { injectResponsiveStorage } from "@/utils/responsive";
-
-import Table from "@pureadmin/table";
-// import PureDescriptions from "@pureadmin/descriptions";
-
-// 引入重置样式
-import "./style/reset.scss";
-// 导入公共样式
-import "./style/index.scss";
-// 一定要在main.ts中导入tailwind.css，防止vite每次hmr都会请求src/style/index.scss整体css文件导致热更新慢的问题
-import "./style/tailwind.css";
-import "element-plus/dist/index.css";
-// 导入字体图标
-import "./assets/iconfont/iconfont.js";
-import "./assets/iconfont/iconfont.css";
+import './polyfill';
+import { createApp } from 'vue';
+import App from './App.vue';
+import { setupRouter } from './router';
+import { setupIcons } from './components/basic/icon';
+import { setupStore } from '@/store';
+import { setupI18n } from '@/locales';
+import { setupAntd, setupAssets, setupGlobalMethods } from '@/plugins';
 
 const app = createApp(App);
 
-// 自定义指令
-import * as directives from "@/directives";
-Object.keys(directives).forEach(key => {
-  app.directive(key, (directives as { [key: string]: Directive })[key]);
-});
+function setupPlugins() {
+  // 安装图标
+  setupIcons();
+  // 注册全局常用的ant-design-vue组件
+  setupAntd(app);
+  // 引入静态资源
+  setupAssets();
+  // 注册全局方法，如：app.config.globalProperties.$message = message
+  setupGlobalMethods(app);
+}
 
-// 全局注册@iconify/vue图标库
-import {
-  IconifyIconOffline,
-  IconifyIconOnline,
-  FontIcon
-} from "./components/ReIcon";
-app.component("IconifyIconOffline", IconifyIconOffline);
-app.component("IconifyIconOnline", IconifyIconOnline);
-app.component("FontIcon", FontIcon);
+async function setupApp() {
+  // 通过动态import可生成单独的chunk，结合全局替换变量，可实现按需加载，且不会对代码打包体积造成影响
+  if (import.meta.env.VITE_MOCK_IN_PROD === 'true') {
+    const { setupMock } = await import('../mocks/');
+    // 启用 mock
+    await setupMock();
+  }
 
-// 全局注册按钮级别权限组件
-import { Auth } from "@/components/ReAuth";
-app.component("Auth", Auth);
-
-// 全局注册vue-tippy
-import "tippy.js/dist/tippy.css";
-import "tippy.js/themes/light.css";
-import VueTippy from "vue-tippy";
-app.use(VueTippy);
-
-getPlatformConfig(app).then(async config => {
+  // 挂载vuex状态管理
   setupStore(app);
-  app.use(router);
-  await router.isReady();
-  injectResponsiveStorage(app, config);
-  app.use(MotionPlugin).use(useElementPlus).use(Table);
-  // .use(PureDescriptions)
-  // .use(useEcharts);
-  app.mount("#app");
-});
+  // Multilingual configuration
+  // Asynchronous case: language files may be obtained from the server side
+  await setupI18n(app);
+  // 挂载路由
+  await setupRouter(app);
+
+  app.mount('#app');
+}
+
+setupPlugins();
+
+setupApp();

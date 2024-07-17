@@ -1,22 +1,36 @@
 node_modules
 .DS_Store
 dist
-dist-ssr
-*.local
-.eslintcache
-report.html
-vite.config.*.timestamp*
+.cache
+.turbo
+.nx
+.nx/cache
 
-yarn.lock
+tests/server/static
+tests/server/static/upload
+
+.local
+# local env files
+.env.local
+.env.*.local
+.eslintcache
+
+# Log files
 npm-debug.log*
-.pnpm-error.log*
-.pnpm-debug.log
-tests/**/coverage/
+yarn-debug.log*
+yarn-error.log*
+*pnpm-debug.log*
 
 # Editor directories and files
 .idea
+# .vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-tsconfig.tsbuildinfo
+*.sw?
+
+# auto generate file
+types/auto-imports.d.ts
+types/components.d.ts
+ 

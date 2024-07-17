@@ -1,51 +1,89 @@
-<h1>vue-pure-admin精简版（非国际化版本）</h1>
+# vue3-antdv-admin
 
-[![license](https://img.shields.io/github/license/pure-admin/vue-pure-admin.svg)](LICENSE)
+基于 vite5.x + vue3.x + antd-design-vue4.x + typescript5.x 的后台管理系统
 
-**中文** | [English](./README.en-US.md)
+- 账号：admin，密码：a123456
+- [在线预览](http://buqiyuan.gitee.io/vue3-antdv-admin/)
+- [项目文档](https://buqiyuan.github.io/vue3-antdv-admin-docs/)
+- [swagger 文档](https://nest-api.buqiyuan.site/api-docs/)
+- [后端仓库地址](https://github.com/buqiyuan/nest-admin)
+- [gitee 地址](https://gitee.com/buqiyuan/vue3-antdv-admin)
+- 根据 JSON 生成 typescript 的工具：[http://json2ts.com/](http://json2ts.com/)
 
-## 介绍
+## 安装使用
 
-精简版是基于 [vue-pure-admin](https://github.com/pure-admin/vue-pure-admin) 提炼出的架子，包含主体功能，更适合实际项目开发，打包后的大小在全局引入 [element-plus](https://element-plus.org) 的情况下仍然低于 `2.3MB`，并且会永久同步完整版的代码。开启 `brotli` 压缩和 `cdn` 替换本地库模式后，打包大小低于 `350kb`
+- 获取项目代码
 
-## 版本选择
+```bash
+git clone https://github.com/buqiyuan/vue3-antdv-admin
+```
 
-当前是非国际化版本，如果您需要国际化版本 [请点击](https://github.com/pure-admin/pure-admin-thin/tree/i18n)
+- 安装依赖
 
-## `js` 版本
+```bash
+cd vue3-antdv-admin
 
-[点我查看 js 版本](https://pure-admin.github.io/pure-admin-doc/pages/js/)
+pnpm install
 
-## `max` 版本
+```
 
-[点我查看 max 版本](https://github.com/pure-admin/vue-pure-admin-max)
+- 运行
 
-## 配套视频
+```bash
+pnpm dev
+```
 
-[点我查看 UI 设计](https://www.bilibili.com/video/BV17g411T7rq)  
-[点我查看快速开发教程](https://www.bilibili.com/video/BV1kg411v7QT)
+- 打包
 
-## 配套保姆级文档
+```bash
+pnpm build
+```
 
-[点我查看 vue-pure-admin 文档](https://pure-admin.github.io/pure-admin-doc)  
-[点我查看 @pureadmin/utils 文档](https://pure-admin-utils.netlify.app)
+## vscode 配置
 
-## 优质服务、软件外包、赞助支持
+安装项目根目录 `.vscode` 推荐的插件，再安装 `Volar`，并禁用 `Vetur`，重启 vscode 即可。
 
-[点我查看详情](https://pure-admin.github.io/pure-admin-doc/pages/service/)
+> 使用了 Vue3.x 全家桶、ant-design-vue4.x 和 typescript5.x，实践 vue3.x 的新特性以及玩法，不得不说 vue3.x 的 Composition API 相比于 vue2.x 的 Options API 灵活很多，让我们可以灵活地组合组件逻辑，我们可以很轻松的使用 hooks 的形式去代替以前 mixins 等的写法。更多 hooks 可以参考[vueuse](https://vueuse.org/functions.html)
 
-## 预览
+### todolist
 
-[查看预览](https://pure-admin-thin.netlify.app/#/login)
+- [x] 动态表格(完善中)
+- [x] 动态表单(完善中)
+- [ ] 电商 SKU 功能演示
+- [ ] 纯前端导出 PDF 动态分页
+- [ ] 其他...
 
-## 维护者
+## Git 贡献提交规范
 
-[xiaoxian521](https://github.com/xiaoxian521)
+- 参考 [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) 规范 ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
 
-## ⚠️ 注意
+  - `feat` 增加新功能
+  - `fix` 修复问题/BUG
+  - `style` 代码风格相关无影响运行结果的
+  - `perf` 优化/性能提升
+  - `refactor` 重构
+  - `revert` 撤销修改
+  - `test` 测试相关
+  - `docs` 文档/注释
+  - `chore` 依赖更新/脚手架配置修改等
+  - `workflow` 工作流改进
+  - `ci` 持续集成
+  - `types` 类型定义文件更改
+  - `wip` 开发中
 
-精简版不接受任何 `issues` 和 `pr`，如果有问题请到完整版 [issues](https://github.com/pure-admin/vue-pure-admin/issues/new/choose) 去提，谢谢！
+## 更新日志
 
-## 许可证
+[CHANGELOG](./CHANGELOG.md)
 
-[MIT © 2020-present, pure-admin](./LICENSE)
+## 赞赏
+
+如果你觉得这个项目对你有帮助，你可以帮作者买一杯咖啡表示支持!
+
+| 微信 | 支付宝 |
+| :-: | :-: |
+| <img src="https://cdn.jsdelivr.net/gh/buqiyuan/MyImageHosting/imgs/vue3-antdv-admin/weixin.jpg" height="220" /> | <img src="https://cdn.jsdelivr.net/gh/buqiyuan/MyImageHosting/imgs/vue3-antdv-admin/zhifubao.jpg" height="220" /> |
+
+## 感谢 JetBrains 免费的开源授权
+
+<a href="https://www.jetbrains.com/?from=Mybatis-PageHelper" target="_blank">
+<img src="https://user-images.githubusercontent.com/1787798/69898077-4f4e3d00-138f-11ea-81f9-96fb7c49da89.png" height="200"/></a>
