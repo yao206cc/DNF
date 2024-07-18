@@ -31,7 +31,7 @@ const routes: Array<RouteRecordRaw> = [
           keepAlive: false,
           activeMenu: `${moduleName}-list`,
         },
-        component: () => import('@/views/demos/tables/lol-table/heroInfo.vue'),
+        component: () => import('@/views/equipment/info.vue'),
       },
     ],
   },

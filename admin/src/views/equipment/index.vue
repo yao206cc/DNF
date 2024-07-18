@@ -3,7 +3,7 @@
     <DynamicTable
       size="small"
       bordered
-      :data-request="getEquipmentList"
+      :data-request="loadTableData"
       :columns="columns"
       row-key="equipmentId"
       export-file-name="武器"
@@ -22,10 +22,11 @@
   import { useRouter } from 'vue-router';
   import { Card } from 'ant-design-vue';
   import { columns } from './columns';
+  import type { LoadDataParams } from '@/components/core/dynamic-table';
   import { columnKeyFlags, useTable } from '@/components/core/dynamic-table';
-  import { getEquipmentList } from '@/api/equipment/index';
   import { useContextMenu } from '@/hooks/functions/useContextMenu';
   import { useExportExcelModal, jsonToSheetXlsx, aoaToSheetXlsx } from '@/components/basic/excel';
+  import Api from '@/api';
 
   defineOptions({
     name: 'EquipmentTable',
@@ -37,6 +38,13 @@
   const [createContextMenu] = useContextMenu();
 
   const exportExcelModal = useExportExcelModal();
+
+  const loadTableData = async (params: LoadDataParams) => {
+    const data = await Api.equipment.equipmentFindAll({
+      ...params,
+    });
+    return data;
+  };
 
   const aoaToExcel = () => {
     const colFilters = columns.filter((n) => !columnKeyFlags.includes(n.dataIndex as string));
@@ -82,7 +90,7 @@
               label: '查看',
               handler: () => {
                 console.log('record', record);
-                router.push({ name: 'demos-table-lol-info', params: { id: record.heroId } });
+                router.push({ name: 'equipment-info', params: { id: record.id } });
               },
             },
             {

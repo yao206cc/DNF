@@ -99,6 +99,38 @@ declare namespace API {
     coresLoad: CoreLoad[];
   };
 
+  type CreateEquipmentDto = {
+    equipmentName: string;
+    applicableLevel: number;
+    applicableClass: string;
+    equipmentQuality: string;
+    wearPart: string;
+    weaponType: string;
+    attackSpeedType?: string;
+    magicResistance?: number;
+    healthPoints?: number;
+    manaPoints?: number;
+    strength?: number;
+    intelligence?: number;
+    vitality?: number;
+    spirit?: number;
+    physicalAttack?: number;
+    magicalAttack?: number;
+    magicalDefense?: number;
+    physicalDefense?: number;
+    physicalCriticalRate?: number;
+    physicalCritical?: number;
+    magicalCriticalRate?: number;
+    magicalCritical?: number;
+    attackSpeed?: number;
+    moveSpeed?: number;
+    castSpeed?: number;
+    accuracy?: number;
+    accuracyRate?: number;
+    imageUrl?: string;
+    specialEffect?: string;
+  };
+
   type DeleteDto = {
     /** 需要操作的文件或文件夹 */
     files: FileOpItem[];
@@ -292,6 +324,90 @@ declare namespace API {
     subject: string;
     /** 正文 */
     content: string;
+  };
+
+  type EquipmentEntity = {
+    /** 装备名称。 */
+    equipmentName: string;
+    /** 装备适用等级。 */
+    applicableLevel: number;
+    /** 适用职业。 */
+    applicableClass: string;
+    /** 装备品质。 */
+    equipmentQuality: string;
+    /** 穿戴部位。 */
+    wearPart: string;
+    /** 武器类型。 */
+    weaponType: string;
+    /** 攻击速度类型。 */
+    attackSpeedType: string;
+    /** 抗魔值。 */
+    magicResistance: number;
+    /** 生命值。 */
+    healthPoints: number;
+    /** 魔法值。 */
+    manaPoints: number;
+    /** 力量。 */
+    strength: number;
+    /** 智力。 */
+    intelligence: number;
+    /** 体力。 */
+    vitality: number;
+    /** 精神。 */
+    spirit: number;
+    /** 物理攻击力。 */
+    physicalAttack: number;
+    /** 魔法攻击力。 */
+    magicalAttack: number;
+    /** 魔法防御力。 */
+    magicalDefense: number;
+    /** 物理防御力。 */
+    physicalDefense: number;
+    /** 物理暴击率。 */
+    physicalCriticalRate: number;
+    /** 物理暴击。 */
+    physicalCritical: number;
+    /** 魔法暴击率。 */
+    magicalCriticalRate: number;
+    /** 魔法暴击。 */
+    magicalCritical: number;
+    /** 攻击速度数值。 */
+    attackSpeed: number;
+    /** 移动速度。 */
+    moveSpeed: number;
+    /** 施放速度。 */
+    castSpeed: number;
+    /** 命中。 */
+    accuracy: number;
+    /** 命中率。 */
+    accuracyRate: number;
+    /** 装备图片URL。 */
+    imageUrl: string;
+    /** 特殊效果描述。 */
+    specialEffect: string;
+    id: number;
+    createdAt: string;
+    updatedAt: string;
+  };
+
+  type EquipmentFindAllParams = {
+    page?: number;
+    pageSize?: number;
+    field?: string;
+    order?: 'ASC' | 'DESC';
+    _t?: number;
+  };
+
+  type EquipmentFindOneParams = {
+    id: number;
+  };
+
+  type EquipmentRemoveParams = {
+    id: string;
+  };
+
+  type EquipmentUpdateParams = {
+    id: number;
   };
 
   type FileOpDto = {
@@ -1156,6 +1272,8 @@ declare namespace API {
     parentId: number;
     children: string[];
   };
+
+  type UpdateEquipmentDto = {};
 
   type UploadToken = {
     /** 上传token */
