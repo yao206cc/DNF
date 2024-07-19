@@ -24,6 +24,6 @@ FROM nginx:alpine as production
 ARG PROJECT_DIR
 
 COPY --from=builder $PROJECT_DIR/dist/ /usr/share/nginx/html
-COPY --from=builder $PROJECT_DIR/nginx.conf /etc/nginx/nginx.conf
+COPY --from=builder $PROJECT_DIR/nginx.conf /etc/nginx/conf.d/nginx.conf
 
 EXPOSE 80
