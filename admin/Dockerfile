@@ -2,7 +2,7 @@
 # https://stackoverflow.com/questions/53681522/share-variable-in-multi-stage-dockerfile-arg-before-from-not-substituted
 ARG PROJECT_DIR=/admin
 
-FROM node:20-slim as builder
+FROM node:20-slim AS builder
 ARG PROJECT_DIR
 WORKDIR $PROJECT_DIR
 
@@ -20,7 +20,7 @@ ENV VITE_BASE_URL=/
 RUN pnpm build
 
 
-FROM nginx:alpine as production
+FROM nginx:alpine AS production
 ARG PROJECT_DIR
 
 COPY --from=builder $PROJECT_DIR/dist/ /usr/share/nginx/html
