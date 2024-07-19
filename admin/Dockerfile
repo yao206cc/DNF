@@ -1,6 +1,6 @@
 
 # https://stackoverflow.com/questions/53681522/share-variable-in-multi-stage-dockerfile-arg-before-from-not-substituted
-ARG PROJECT_DIR=/vue3-antdv-admin
+ARG PROJECT_DIR=/admin
 
 FROM node:20-slim as builder
 ARG PROJECT_DIR
@@ -24,6 +24,6 @@ FROM nginx:alpine as production
 ARG PROJECT_DIR
 
 COPY --from=builder $PROJECT_DIR/dist/ /usr/share/nginx/html
-# COPY --from=builder $PROJECT_DIR/nginx.conf /etc/nginx/nginx.conf
+COPY --from=builder $PROJECT_DIR/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
