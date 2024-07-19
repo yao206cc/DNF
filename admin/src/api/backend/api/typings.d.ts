@@ -105,7 +105,7 @@ declare namespace API {
     applicableClass: string;
     equipmentQuality: string;
     wearPart: string;
-    equipmentType: string;
+    eequipmentType: string;
     attackSpeedType?: string;
     magicResistance?: number;
     healthPoints?: number;
@@ -338,7 +338,7 @@ declare namespace API {
     /** 穿戴部位。 */
     wearPart: string;
     /** 装备类型。 */
-    equipmentType: string;
+    eequipmentType: string;
     /** 攻击速度类型。 */
     attackSpeedType: string;
     /** 抗魔值。 */

@@ -52,7 +52,7 @@ export const columns: TableColumn[] = [
   },
   {
     title: '装备类型',
-    dataIndex: 'equipmentType',
+    dataIndex: 'eequipmentType',
   },
   {
     title: '攻击速度类型',

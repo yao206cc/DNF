@@ -5,7 +5,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "矛",
+      "eequipmentType": "矛",
       "magicResistance": 2260,
       "attributes": {
         "strength": 70,
@@ -28,7 +28,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "矛",
+      "eequipmentType": "矛",
       "magicResistance": 2033,
       "attributes": {
         "strength": 103,
@@ -48,7 +48,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "矛",
+      "eequipmentType": "矛",
       "magicResistance": 2033,
       "attributes": {
         "strength": 65,
@@ -67,7 +67,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "矛",
+      "eequipmentType": "矛",
       "magicResistance": 2033,
       "attributes": {
         "strength": 65,
@@ -86,7 +86,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "矛",
+      "eequipmentType": "矛",
       "magicResistance": 2033,
       "attributes": {
         "strength": 65,
@@ -106,7 +106,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "矛",
+      "eequipmentType": "矛",
       "magicResistance": 1785,
       "attributes": {
         "strength": 55,
@@ -126,7 +126,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "棍棒",
+      "eequipmentType": "棍棒",
       "magicResistance": 2260,
       "attributes": {
         "strength": 46,
@@ -149,7 +149,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "棍棒",
+      "eequipmentType": "棍棒",
       "magicResistance": 2033,
       "attributes": {
         "strength": 43,
@@ -172,7 +172,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "棍棒",
+      "eequipmentType": "棍棒",
       "magicResistance": 2033,
       "attributes": {
         "strength": 43,
@@ -192,7 +192,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "棍棒",
+      "eequipmentType": "棍棒",
       "magicResistance": 2033,
       "attributes": {
         "strength": 43,
@@ -214,7 +214,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "魔杖",
+      "eequipmentType": "魔杖",
       "magicResistance": 2260,
       "attributes": {
         "strength": 70,
@@ -237,7 +237,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "魔杖",
+      "eequipmentType": "魔杖",
       "magicResistance": 2033,
       "attributes": {
         "strength": 65,
@@ -263,7 +263,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "魔杖",
+      "eequipmentType": "魔杖",
       "magicResistance": 2033,
       "attributes": {
         "strength": 65,
@@ -283,7 +283,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "魔杖",
+      "eequipmentType": "魔杖",
       "magicResistance": 2033,
       "attributes": {
         "strength": 65,
@@ -306,7 +306,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "法杖",
+      "eequipmentType": "法杖",
       "magicResistance": 2260,
       "attributes": {
         "intelligence": 46,
@@ -328,7 +328,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "法杖",
+      "eequipmentType": "法杖",
       "magicResistance": 2033,
       "attributes": {
         "intelligence": 131,
@@ -347,7 +347,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "法杖",
+      "eequipmentType": "法杖",
       "magicResistance": 2033,
       "attributes": {
         "intelligence": 43,
@@ -370,7 +370,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "法杖",
+      "eequipmentType": "法杖",
       "magicResistance": 2033,
       "attributes": {
         "intelligence": 43,
@@ -388,7 +388,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "法杖",
+      "eequipmentType": "法杖",
       "magicResistance": 2033,
       "attackSpeedType":"缓慢",
       "attributes": {
@@ -408,7 +408,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "扫把",
+      "eequipmentType": "扫把",
       "magicResistance": 2260,
       "attributes": {
         "intelligence": 46,
@@ -431,7 +431,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "扫把",
+      "eequipmentType": "扫把",
       "magicResistance": 2033,
       "attributes": {
         "intelligence": 43,
@@ -454,7 +454,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "扫把",
+      "eequipmentType": "扫把",
       "magicResistance": 2033,
       "attributes": {
         "intelligence": 43,
@@ -476,7 +476,7 @@
       "requiredClass": "魔法师",
       "quality": "史诗",
       "wearingPosition": "武器",
-      "equipmentType": "扫把",
+      "eequipmentType": "扫把",
       "magicResistance": 2033,
       "attributes": {
         "intelligence": 43,

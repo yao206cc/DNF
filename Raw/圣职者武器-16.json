@@ -13,7 +13,7 @@
     "applicableLevel": 55,
     "wearPart": "武器",
     "applicableClass": "圣职者",
-    "quipmentType": "光杖",
+    "equipmentType": "光杖",
     "attackSpeedType": "缓慢"
 },
 {
@@ -28,7 +28,7 @@
     "applicableLevel": 55,
     "wearPart": "武器",
     "applicableClass": "圣职者",
-    "quipmentType": "图腾",
+    "equipmentType": "图腾",
     "attackSpeedType": "缓慢"
 },
 {
@@ -43,6 +43,6 @@
     "applicableLevel": 55,
     "wearPart": "武器",
     "applicableClass": "圣职者",
-    "quipmentType": "灵珠",
+    "equipmentType": "灵珠",
     "attackSpeedType": "缓慢"
 }]

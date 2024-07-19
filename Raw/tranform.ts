@@ -8,7 +8,7 @@ const equipmentFieldDescriptions = new Map([
     ['applicableClass', '适用职业'],
     ['equipmentQuality', 'rare'], //装备品质
     ['wearPart', '穿戴部位'], //穿戴部位
-    ['equipmentType', 'side_name'], //装备类型
+    ['eequipmentType', 'side_name'], //装备类型
     ['attackSpeedType', '攻击速度类型'],
 
     ['magicResistance', '抗魔值'],

@@ -45,7 +45,7 @@ export class Equipment {
    * 装备类型。
    */
   @Column({ type: 'varchar', length: 255, nullable: false })
-  quipmentType: string;
+  equipmentType: string;
 
   /**
    * 攻击速度类型。

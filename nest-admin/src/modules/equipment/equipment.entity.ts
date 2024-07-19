@@ -40,8 +40,8 @@ export class EquipmentEntity extends CommonEntity {
   /**
    * 装备类型
    */
-  @Column({ name: 'quipment_type', type: 'varchar', length: 255, nullable: true })
-  quipmentType: string
+  @Column({ name: 'equipment_type', type: 'varchar', length: 255, nullable: true })
+  equipmentType: string
 
   /**
    * 攻击速度类型
