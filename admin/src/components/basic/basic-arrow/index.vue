@@ -9,7 +9,6 @@
   const props = defineProps({
     expand: { type: Boolean },
   });
-  console.log('测试打包功能');
   /**
    * @description 展开/收起 图标旋转转数
    */
