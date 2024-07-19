@@ -28,6 +28,7 @@ export class UploadController {
     type: FileUploadDto,
   })
   async upload(@Req() req: FastifyRequest, @AuthUser() user: IAuthUser) {
+    console.log('upload')
     if (!req.isMultipart())
       throw new BadRequestException('Request is not multipart')
 

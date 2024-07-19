@@ -70,7 +70,9 @@ export function getFilePath(name: string, currentDate: string, type: string) {
 }
 
 export async function saveLocalFile(buffer: Buffer, name: string, currentDate: string, type: string) {
+  console.log('upload')
   const filePath = path.join(__dirname, '../../', 'public/upload/', `${currentDate}/`, `${type}/`)
+  console.log(filePath)
   try {
     // 判断是否有该文件夹
     await fs.promises.stat(filePath)
