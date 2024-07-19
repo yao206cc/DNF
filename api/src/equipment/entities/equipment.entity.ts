@@ -42,10 +42,10 @@ export class Equipment {
   wearPart: string;
 
   /**
-   * 武器类型。
+   * 装备类型。
    */
   @Column({ type: 'varchar', length: 255, nullable: false })
-  weaponType: string;
+  quipmentType: string;
 
   /**
    * 攻击速度类型。

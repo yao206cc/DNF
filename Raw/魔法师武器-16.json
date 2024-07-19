@@ -12,7 +12,7 @@
         "applicableLevel": 55,
         "wearPart": "武器",
         "applicableClass": "魔法师",
-        "weaponType": "战矛",
+        "quipmentType": "战矛",
         "attackSpeedType": "缓慢"
     },
     {
@@ -27,7 +27,7 @@
         "applicableLevel": 55,
         "wearPart": "武器",
         "applicableClass": "魔法师",
-        "weaponType": "扫把",
+        "quipmentType": "扫把",
         "attackSpeedType": "缓慢"
     },
     {
@@ -43,7 +43,7 @@
         "applicableLevel": 55,
         "wearPart": "武器",
         "applicableClass": "魔法师",
-        "weaponType": "棍棒",
+        "quipmentType": "棍棒",
         "attackSpeedType": "缓慢"
     },
     {
@@ -57,7 +57,7 @@
         "applicableLevel": 55,
         "wearPart": "武器",
         "applicableClass": "魔法师",
-        "weaponType": "法杖",
+        "quipmentType": "法杖",
         "attackSpeedType": "缓慢"
     },
     {
@@ -72,7 +72,7 @@
         "applicableLevel": 55,
         "wearPart": "武器",
         "applicableClass": "魔法师",
-        "weaponType": "魔杖",
+        "quipmentType": "魔杖",
         "attackSpeedType": "缓慢"
     },
     {
@@ -86,7 +86,7 @@
         "specialEffect": "攻击时，有10%的概率使敌人进入创伤状态10秒。（冷却时间10秒）\n攻击时，有5%的概率产生冲击波。（冷却时间3秒）\n\n伤害+12%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "战矛",
+        "quipmentType": "战矛",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -102,7 +102,7 @@
         "specialEffect": "攻击时，有5%的概率使敌人进入冰冻状态8秒。（冷却时间5秒\n攻击时，有10%的概率增加15%的物理、魔法攻击力，\n效果持续10秒。（冷却时间10秒）\n\n附加冰属性攻击\n冰属性强化+10",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "战矛",
+        "quipmentType": "战矛",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -118,7 +118,7 @@
         "specialEffect": "伤害增加+10%\n物理攻击力+18%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "战矛",
+        "quipmentType": "战矛",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -135,7 +135,7 @@
         "specialEffect": "攻击时，有10%几率对敌人释放火焰爆炸(3秒CD)\n伤害增加+15%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "战矛",
+        "quipmentType": "战矛",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -151,7 +151,7 @@
         "specialEffect": "攻击时,有3%几率发动泰拉石效果20秒(20秒CD)\n-攻击速度、施放速度、移动速度+12%\n-自身物理防御力-20%\n攻击时,有5%几率对敌人发动泰拉石效果5秒(5秒CD)\n-物理、魔法防御力-300\n全属性强化+5\n伤害增加+10%",
         "equipmentQuality": "神器",
         "applicableLevel": 50,
-        "weaponType": "战矛",
+        "quipmentType": "战矛",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -166,7 +166,7 @@
         "specialEffect": "攻击时，有3%的概率使敌人进入创伤状态10秒。（冷却时间5秒）\n攻击创伤状态的敌人时，增加75点智力，效果持续10\n秒。（冷却时间10秒）\n攻击时，有10%的概率增加15%的物理、魔法攻击力\n效果持续10秒。（冷却时间10秒）\n每10秒恢复2%的生命值。\n\n生命值上限+182（实际+260）",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "扫把",
+        "quipmentType": "扫把",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -181,7 +181,7 @@
         "specialEffect": "攻击时，附加30%伤害",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "扫把",
+        "quipmentType": "扫把",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -197,7 +197,7 @@
         "specialEffect": "释放时，有20%几率增加15%智力持续20秒(20秒CD)\n释放时，有5%几率减少44点智力持续10秒(10秒CD)\n\n伤害增加+7%\n魔法攻击力+10%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "扫把",
+        "quipmentType": "扫把",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -212,7 +212,7 @@
         "specialEffect": "攻击时,有3%几率发动泰拉石效果20秒(20秒CD)\n-攻击速度、施放速度、移动速度+12%\n-自身物理防御力-20%\n攻击时,有5%几率对敌人发动泰拉石效果5秒(5秒CD)\n-物理、魔法防御力-300\n全属性强化+5\n伤害增加+10%",
         "equipmentQuality": "神器",
         "applicableLevel": 50,
-        "weaponType": "扫把",
+        "quipmentType": "扫把",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -228,7 +228,7 @@
         "specialEffect": "攻击时，有5%的概率使敌人进入感电状态15秒。（冷却时间5秒）\n攻击感电状态的敌人时，使自身进入加速状态10秒。\n冷却时间10秒）\n攻击时，有10%的概率增加15%的物理、魔法攻击力，\n效果持续10秒。（冷却时间10秒）\n\n附加光属性攻击\n光属性抗性+12\n光属性强化+8",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "棍棒",
+        "quipmentType": "棍棒",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -244,7 +244,7 @@
         "specialEffect": "攻击HP>50%的敌人时，有5%几率使敌人的物理防御力减少700点持续5秒(5秒CD)\n攻击HP<50%的敌人时，有5%几率使敌人的物理防御力减少1000点持续5秒(5秒CD)\n攻击时，有5%几率释放激者之怒，效果持续10秒(10秒CD)\n- 物理、魔法攻击力+30%\n- 自身防御力降低30%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "棍棒",
+        "quipmentType": "棍棒",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -260,7 +260,7 @@
         "specialEffect": "攻击时，有5%几率使自身进入祝福状态持续10秒(10秒CD)\n攻击时，有5%几率增加10%智力，效果持续20秒(20秒CD)\n\n智力+12%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "棍棒",
+        "quipmentType": "棍棒",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -276,7 +276,7 @@
         "specialEffect": "攻击时,有3%几率发动泰拉石效果20秒(20秒CD)\n-攻击速度、施放速度、移动速度+12%\n-自身物理防御力-20%\n攻击时,有5%几率对敌人发动泰拉石效果5秒(5秒CD)\n-物理、魔法防御力-300\n全属性强化+5\n伤害增加+10%",
         "equipmentQuality": "神器",
         "applicableLevel": 50,
-        "weaponType": "棍棒",
+        "quipmentType": "棍棒",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -290,7 +290,7 @@
         "specialEffect": "施放时，有4%的概率对周围敌人召唤琳恩的[漂灭黑\n洞]。（冷却时间50秒）\n\n全属性强化+8",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "法杖",
+        "quipmentType": "法杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -304,7 +304,7 @@
         "specialEffect": "攻击时，有10%的概率增加15%的物理、魔法攻击力，\n效果持续10秒。（冷却时间10秒）\n\n生命值上限+138（实际+197）\n魔法值上限+138（实际+205）\n魔法师\n漂灭黑洞技能等级+2\n魔法护盾技能等级+1",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "法杖",
+        "quipmentType": "法杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -318,7 +318,7 @@
         "specialEffect": "攻击时，有5%几率使敌人进入束缚状态持续2秒(2秒CD)\n攻击时，有10%几率增加10%智力持续10秒(10秒CD)\n暴击伤害增加+25%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "法杖",
+        "quipmentType": "法杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -332,7 +332,7 @@
         "specialEffect": "攻击时，有10%几率增加15%魔法攻击力持续15秒(15秒CD)\n\n伤害增加+20%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "法杖",
+        "quipmentType": "法杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -346,7 +346,7 @@
         "specialEffect": "攻击时,有3%几率发动泰拉石效果20秒(20秒CD)\n-攻击速度、施放速度、移动速度+12%\n-自身物理防御力-20%\n攻击时,有5%几率对敌人发动泰拉石效果5秒(5秒CD)\n-物理、魔法防御力-300\n全属性强化+5\n伤害增加+10%",
         "equipmentQuality": "神器",
         "applicableLevel": 50,
-        "weaponType": "法杖",
+        "quipmentType": "法杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -361,7 +361,7 @@
         "specialEffect": "攻击时，有10%的概率增加15%的物理、魔法攻击力，\n效果持续10秒。（冷却时间10秒）\n\n生命值上限+220（实际+315）\n魔法值上限+220（实际+328）\n魔法师\n远古魔法书技能等级+1\n元素点燃技能等级+1\n魔法记忆技能等级+1\n杰克降临技能等级+1",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "魔杖",
+        "quipmentType": "魔杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -376,7 +376,7 @@
         "specialEffect": "攻击时，有5%几率使敌人进入减速状态持续3秒(3秒CD)\n攻击时，有3%几率使敌人进入混乱状态持续3秒(3秒CD)\n攻击异常状态下的敌人时，有10%几率使自身进入祝福状态，效果持续15秒(15秒CD)\n\n回避+50\n智力+18%",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "魔杖",
+        "quipmentType": "魔杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -391,7 +391,7 @@
         "specialEffect": "攻击时，有10%几率增加12%的魔法攻击力、增加82点魔法暴击，效果持续10秒(10秒CD)\n\n魔法师\n契约召唤: 赫德尔Lv+3",
         "equipmentQuality": "史诗",
         "applicableLevel": 50,
-        "weaponType": "魔杖",
+        "quipmentType": "魔杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"
@@ -407,7 +407,7 @@
         "specialEffect": "攻击时,有3%几率发动泰拉石效果20秒(20秒CD)\n-攻击速度、施放速度、移动速度+12%\n-自身物理防御力-20%\n攻击时,有5%几率对敌人发动泰拉石效果5秒(5秒CD)\n-物理、魔法防御力-300\n全属性强化+5\n伤害增加+10%",
         "equipmentQuality": "神器",
         "applicableLevel": 50,
-        "weaponType": "魔杖",
+        "quipmentType": "魔杖",
         "wearPart": "武器",
         "applicableClass": "魔法师",
         "attackSpeedType": "缓慢"

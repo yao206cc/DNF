@@ -748,7 +748,7 @@ CREATE TABLE `equipment` (
     `applicable_class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '适用职业',
     `equipment_quality` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '装备品质',
     `wear_part` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '穿戴部位',
-    `weapon_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '武器类型',
+    `quipment_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '装备类型',
     `attack_speed_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '攻击速度类型',
     `strength` int(11) NULL DEFAULT NULL COMMENT '力量',
     `intelligence` int(11) NULL DEFAULT NULL COMMENT '智力',

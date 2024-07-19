@@ -51,8 +51,8 @@ export const columns: TableColumn[] = [
     dataIndex: 'wearPart',
   },
   {
-    title: '武器类型',
-    dataIndex: 'weaponType',
+    title: '装备类型',
+    dataIndex: 'equipmentType',
   },
   {
     title: '攻击速度类型',

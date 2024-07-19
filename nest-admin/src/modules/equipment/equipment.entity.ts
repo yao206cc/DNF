@@ -38,10 +38,10 @@ export class EquipmentEntity extends CommonEntity {
   wearPart: string
 
   /**
-   * 武器类型
+   * 装备类型
    */
-  @Column({ name: 'weapon_type', type: 'varchar', length: 255, nullable: true })
-  weaponType: string
+  @Column({ name: 'quipment_type', type: 'varchar', length: 255, nullable: true })
+  quipmentType: string
 
   /**
    * 攻击速度类型

@@ -5,7 +5,7 @@ const equipmentFieldDescriptions = new Map([
     ['applicableClass', '适用职业'],
     ['equipmentQuality', '装备品质'],
     ['wearPart', '穿戴部位'],
-    ['weaponType', '武器类型'],
+    ['quipmentType', '装备类型'],
     ['attackSpeedType', '攻击速度类型'],
     ['magicResistance', '抗魔值'],
     ['healthPoints', '生命值'],

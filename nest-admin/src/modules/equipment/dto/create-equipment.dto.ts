@@ -5,7 +5,7 @@ export class CreateEquipmentDto {
   applicableClass: string
   equipmentQuality: string
   wearPart: string
-  weaponType: string
+  quipmentType: string
   attackSpeedType?: string
   magicResistance?: number
   healthPoints?: number

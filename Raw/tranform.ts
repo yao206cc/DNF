@@ -3,12 +3,12 @@ import path from "path"
 
 const equipmentFieldDescriptions = new Map([
     // ['equipmentId', '装备ID'],
-    ['equipmentName', 'name'],
-    ['applicableLevel', 'level'],
-    ['applicableClass', 'side_name'],
-    ['equipmentQuality', 'rare'],
-    ['wearPart', 'equipment_name'],
-    ['weaponType', 'suit_name'],
+    ['equipmentName', 'name'], //装备名称
+    ['applicableLevel', 'level'], //适用等级
+    ['applicableClass', '适用职业'],
+    ['equipmentQuality', 'rare'], //装备品质
+    ['wearPart', '穿戴部位'], //穿戴部位
+    ['equipmentType', 'side_name'], //装备类型
     ['attackSpeedType', '攻击速度类型'],
 
     ['magicResistance', '抗魔值'],
@@ -49,7 +49,7 @@ interface OldEquipment {
     equipment_name: string;
     side_name: string;
 }
-const keyword = `魔法师武器`
+const keyword = `重甲`
 function readFile() {
     const resovledPath = path.join(__dirname, `./${keyword}.json`)
     return fs.readFileSync(resovledPath, { encoding: "utf-8" })
@@ -196,13 +196,12 @@ if (result) {
                 }
             }
         })
-        map.set('attackSpeedType', '缓慢')
         // 转JSON
         return Object.fromEntries(map)
     })
     console.log(`开始写入`, `${tranformArr.length}`)
     writeFile(JSON.stringify(tranformArr))
-    insertRequest(tranformArr)
+    // insertRequest(tranformArr)
     console.log(`Done`)
 }
 
