@@ -33,12 +33,6 @@ CREATE TABLE `sys_captcha_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
--- Records of sys_captcha_log
--- ----------------------------
-BEGIN;
-COMMIT;
-
--- ----------------------------
 -- Table structure for sys_config
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_config`;
@@ -741,50 +735,54 @@ INSERT INTO `user_refresh_tokens` (`id`, `value`, `expired_at`, `created_at`, `a
 INSERT INTO `user_refresh_tokens` (`id`, `value`, `expired_at`, `created_at`, `accessTokenId`) VALUES ('f9a003e8-91b7-41ee-979e-e39cca3534ec', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiWGJQdl9SVjFtUl80N0o0TGF0QlV5IiwiaWF0IjoxNzA3NTA5MTU3fQ.oEVdWSigTpAQY7F8MlwBnedldH0sJT1YF1Mt0ZUbIw4', '2024-03-11 04:05:58', '2024-02-10 04:05:57.706763', '09cf7b0a-62e0-45ee-96b0-e31de32361e0');
 COMMIT;
 
-BEGIN;
 -- ----------------------------
 -- Table structure for equipment
 -- ----------------------------
+BEGIN;
 DROP TABLE IF EXISTS `equipment`;
 
 CREATE TABLE `equipment` (
-    `id` int(11) NOT NULL AUTO_INCREMENT,
-    `equipment_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    `applicable_level` int(11) NOT NULL,
-    `applicable_class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    `equipment_quality` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    `wear_part` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    `weapon_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-    `attack_speed_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
-    `strength` int(11) NULL DEFAULT NULL,
-    `intelligence` int(11) NULL DEFAULT NULL,
-    `vitality` int(11) NULL DEFAULT NULL,
-    `spirit` int(11) NULL DEFAULT NULL,
-    `magic_resistance` int(11) NULL DEFAULT NULL,
-    `health_points` int(11) NULL DEFAULT NULL,
-    `mana_points` int(11) NULL DEFAULT NULL,
-    `physical_attack` int(11) NULL DEFAULT NULL,
-    `magical_attack` int(11) NULL DEFAULT NULL,
-    `magical_defense` int(11) NULL DEFAULT NULL,
-    `physical_defense` int(11) NULL DEFAULT NULL,
-    `physical_critical_rate` decimal(5, 2) NULL DEFAULT NULL,
-    `physical_critical` int(11) NULL DEFAULT NULL,
-    `magical_critical_rate` decimal(5, 2) NULL DEFAULT NULL,
-    `magical_critical` int(11) NULL DEFAULT NULL,
-    `accuracy_rate` decimal(5, 2) NULL DEFAULT NULL,
-    `accuracy` int(11) NULL DEFAULT NULL,
-    `attack_speed` decimal(5, 2) NULL DEFAULT NULL,
-    `move_speed` decimal(5, 2) NULL DEFAULT NULL,
-    `cast_speed` decimal(5, 2) NULL DEFAULT NULL,
-    `image_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
-    `special_effect` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
-    `created_at` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
-    `updated_at` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+    `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '装备ID',
+    `equipment_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '装备名称',
+    `applicable_level` int(11) NOT NULL COMMENT '适用等级',
+    `applicable_class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '适用职业',
+    `equipment_quality` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '装备品质',
+    `wear_part` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '穿戴部位',
+    `weapon_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '武器类型',
+    `attack_speed_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '攻击速度类型',
+    `strength` int(11) NULL DEFAULT NULL COMMENT '力量',
+    `intelligence` int(11) NULL DEFAULT NULL COMMENT '智力',
+    `vitality` int(11) NULL DEFAULT NULL COMMENT '体力',
+    `spirit` int(11) NULL DEFAULT NULL COMMENT '精神',
+    `magic_resistance` int(11) NULL DEFAULT NULL COMMENT '抗魔值',
+    `health_points` int(11) NULL DEFAULT NULL COMMENT '生命值',
+    `mana_points` int(11) NULL DEFAULT NULL COMMENT '魔法值',
+    `physical_attack` int(11) NULL DEFAULT NULL COMMENT '物理攻击力',
+    `magical_attack` int(11) NULL DEFAULT NULL COMMENT '魔法攻击力',
+    `magical_defense` int(11) NULL DEFAULT NULL COMMENT '魔法防御力',
+    `physical_defense` int(11) NULL DEFAULT NULL COMMENT '物理防御力',
+    `physical_critical_rate` decimal(5, 2) NULL DEFAULT NULL COMMENT '物理暴击率',
+    `physical_critical` int(11) NULL DEFAULT NULL COMMENT '物理暴击',
+    `magical_critical_rate` decimal(5, 2) NULL DEFAULT NULL COMMENT '魔法暴击率',
+    `magical_critical` int(11) NULL DEFAULT NULL COMMENT '魔法暴击',
+    `accuracy_rate` decimal(5, 2) NULL DEFAULT NULL COMMENT '命中率',
+    `accuracy` int(11) NULL DEFAULT NULL COMMENT '命中',
+    `attack_speed` decimal(5, 2) NULL DEFAULT NULL COMMENT '攻击速度数值',
+    `move_speed` decimal(5, 2) NULL DEFAULT NULL COMMENT '移动速度',
+    `cast_speed` decimal(5, 2) NULL DEFAULT NULL COMMENT '施放速度',
+    `image_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '图片地址',
+    `special_effect` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL COMMENT '特殊效果',
+    `created_at` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '创建时间',
+    `updated_at` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6) COMMENT '更新时间',
     PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 135 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+COMMIT;
 -- ----------------------------
 -- Records of equipment
 -- ----------------------------
+
+BEGIN;
 INSERT INTO
     `equipment`
 VALUES (
@@ -5743,5 +5741,4 @@ VALUES (
         CURRENT_TIMESTAMP(6)
     );
 COMMIT;
-
 SET FOREIGN_KEY_CHECKS = 1;
