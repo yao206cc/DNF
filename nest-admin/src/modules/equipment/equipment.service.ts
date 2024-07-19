@@ -16,11 +16,10 @@ export class EquipmentService {
   constructor(
     @InjectRepository(EquipmentEntity)
     private equipmentRepository: Repository<EquipmentEntity>,
-  ) {}
+  ) { }
 
-  async create(createEquipmentDto: CreateEquipmentDto) {
-    const equipment = this.equipmentRepository.create(createEquipmentDto)
-    return this.equipmentRepository.save(equipment)
+  async create(createEquipmentDto: CreateEquipmentDto): Promise<void> {
+    await this.equipmentRepository.insert(createEquipmentDto)
   }
 
   findAll({ page, pageSize }: PagerDto): Promise<Pagination<EquipmentEntity>> {
@@ -34,12 +33,11 @@ export class EquipmentService {
     return this.equipmentRepository.findOneBy({ id })
   }
 
-  update(equipmentId: number, updateEquipmentDto: UpdateEquipmentDto) {
-    const equipment = this.equipmentRepository.update(
+  async update(equipmentId: number, updateEquipmentDto: UpdateEquipmentDto) {
+    await this.equipmentRepository.update(
       equipmentId,
       updateEquipmentDto,
     )
-    return equipment
   }
 
   remove(id: number) {

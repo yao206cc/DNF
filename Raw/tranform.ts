@@ -8,7 +8,7 @@ const equipmentFieldDescriptions = new Map([
     ['applicableClass', '适用职业'],
     ['equipmentQuality', 'rare'], //装备品质
     ['wearPart', '穿戴部位'], //穿戴部位
-    ['eequipmentType', 'side_name'], //装备类型
+    ['equipmentType', 'side_name'], //装备类型
     ['attackSpeedType', '攻击速度类型'],
 
     ['magicResistance', '抗魔值'],
@@ -49,7 +49,7 @@ interface OldEquipment {
     equipment_name: string;
     side_name: string;
 }
-const keyword = `重甲`
+const keyword = `项链`
 function readFile() {
     const resovledPath = path.join(__dirname, `./${keyword}.json`)
     return fs.readFileSync(resovledPath, { encoding: "utf-8" })
@@ -69,7 +69,7 @@ function parseAttribute(attrStr: string) {
     // 正则表达式匹配 "属性名+/-数值"，数值可以是整数、小数或百分比
     const regex = /^(.+?)([+-])(\d+(\.\d+)?)(%)?$/;
     const match = attrStr.match(regex);
-    
+
     if (match) {
         // match[1] 包含属性名，match[2] 包含符号（+/-），match[3] 包含数值（可能包含小数点），match[5] 包含可选的百分号
         const attrName = match[1].trim();
@@ -143,20 +143,21 @@ function handleResponse(response: any) {
     console.log('Response:', response);
 }
 
-function insertRequest(tranformArr:any[]){
+function insertRequest(tranformArr: any[]) {
     try {
-    const requestPool = new RequestPool(3)
+        const requestPool = new RequestPool(3)
         tranformArr.forEach(v => {
-            requestPool.addRequest(() => fetch('http://127.0.0.1:3000/equipment', {
-                method: "POST",
+            requestPool.addRequest(() => fetch('http://127.0.0.1:7001/api/equipment', {
                 body: JSON.stringify(v),
+                method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
-                }
+                    'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsInB2IjoxLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MjEzODIzODMsImV4cCI6MTcyMTQ2ODc4M30.qtEKO5UzCD6JTNcpmsghXYg9G4voV2I3uUytJjhDWOs`,
+                    'Content-Type': 'application/json',
+                },
             }).then(response => response.json()).then(handleResponse))
         })
     } catch (err) {
-        console.error(`Error`,err)
+        console.error(`Error`, err)
     }
 }
 
@@ -201,7 +202,7 @@ if (result) {
     })
     console.log(`开始写入`, `${tranformArr.length}`)
     writeFile(JSON.stringify(tranformArr))
-    // insertRequest(tranformArr)
+    insertRequest(tranformArr)
     console.log(`Done`)
 }
 
@@ -213,5 +214,7 @@ if (result) {
  * 
  * 圣职者-武器 
  * 魂·欧贝斯的蓝龙光杖 | 魂·尼尔巴斯的赤玉镰
+ * 
+ * 板甲-魂·牛头械王的超能战靴
  * 
  */

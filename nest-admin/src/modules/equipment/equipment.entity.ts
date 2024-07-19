@@ -1,3 +1,4 @@
+import { ApiProperty } from '@nestjs/swagger'
 import { Column, Entity } from 'typeorm'
 
 import { CommonEntity } from '~/common/entity/common.entity'
@@ -10,13 +11,15 @@ export class EquipmentEntity extends CommonEntity {
   /**
    * 装备名称
    */
-  @Column({ name: 'equipment_name', type: 'varchar', length: 255, nullable: true })
+  @Column({ name: 'equipment_name', type: 'varchar', length: 255 })
+  @ApiProperty({ description: '装备名称' })
   equipmentName: string
 
   /**
    * 装备适用等级
    */
-  @Column({ name: 'applicable_level', type: 'int', nullable: true })
+  @Column({ name: 'applicable_level', type: 'int' })
+  @ApiProperty({ description: '装备等级' })
   applicableLevel: number
 
   /**
@@ -28,7 +31,8 @@ export class EquipmentEntity extends CommonEntity {
   /**
    * 装备品质
    */
-  @Column({ name: 'equipment_quality', type: 'varchar', length: 255, nullable: true })
+  @Column({ name: 'equipment_quality', type: 'varchar', length: 255 })
+  @ApiProperty({ description: '装备品质' })
   equipmentQuality: string
 
   /**
@@ -40,7 +44,8 @@ export class EquipmentEntity extends CommonEntity {
   /**
    * 装备类型
    */
-  @Column({ name: 'equipment_type', type: 'varchar', length: 255, nullable: true })
+  @Column({ name: 'equipment_type', type: 'varchar', length: 255 })
+  @ApiProperty({ description: '装备类型' })
   equipmentType: string
 
   /**
